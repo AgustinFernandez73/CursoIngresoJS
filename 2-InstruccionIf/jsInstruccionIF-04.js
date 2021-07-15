@@ -15,10 +15,12 @@ function mostrar() {
 
 /* Otra forma de resolverlo es:
 
-let edad;
+if  (edad <= 17 && edad >= 13) {
+	alert("La persona es adolescente")
+}
 
-edad = parseInt(document.getElementById("txtIdEdad").value);
+Otra forma:
 
-if  (edad <= 13 && edad >= 17) {
-	alert("La persona no es adolescente")
+if (!(edad > 17 || edad < 13)) {
+	alert("Es adolescente");
 } */
