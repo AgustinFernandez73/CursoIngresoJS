@@ -12,40 +12,40 @@ function mostrar() {
 		case "Invierno":
 			switch (destino) {
 				case "Bariloche":
-					precioTotal = ((precioBase * 20) / 100) + precioBase;
+					precioTotal = precioBase * 20 / 100 + precioBase;
 					alert("El precio total es: $" + precioTotal);
 					break;
 				case "Cataratas":
 				case "Cordoba":
-					precioTotal = precioBase - ((precioBase * 10) / 100);
+					precioTotal = precioBase - precioBase * 10 / 100;
 					alert("El precio total es: $" + precioTotal);
 					break;
 				case "Mar del plata":
-					precioTotal = precioBase - ((precioBase * 20) / 100);
+					precioTotal = precioBase - precioBase * 20 / 100;
 					alert("El precio total es: $" + precioTotal);
 					break;
 			}
 
-		break;
+			break;
 
 		case "Verano":
 			switch (destino) {
 				case "Bariloche":
-					precioTotal = precioBase - ((precioBase * 20) / 100);
+					precioTotal = precioBase - precioBase * 20 / 100;
 					alert("El precio total es: $" + precioTotal);
 					break;
 				case "Cataratas":
 				case "Cordoba":
-					precioTotal = ((precioBase * 10) / 100) + precioBase;
+					precioTotal = precioBase * 10 / 100 + precioBase;
 					alert("El precio total es: $" + precioTotal);
 					break;
 				case "Mar del plata":
-					precioTotal = ((precioBase * 20) / 100) + precioBase;
+					precioTotal = precioBase * 20 / 100 + precioBase;
 					alert("El precio total es: $" + precioTotal);
 					break;
 			}
 
-		break;
+			break;
 
 		case "Otoño":
 		case "Primavera":
@@ -53,16 +53,16 @@ function mostrar() {
 				case "Bariloche":
 				case "Mar del plata":
 				case "Cataratas":
-					precioTotal = ((precioBase * 10) / 100) +precioBase;
+					precioTotal = precioBase * 10 / 100 + precioBase;
 					alert("El precio total es: $" + precioTotal);
 					break;
 				case "Cordoba":
 					precioTotal = precioBase
-					alert("El precio total es: $" +precioTotal);
+					alert("El precio total es: $" + precioTotal);
 					break;
 			}
-		
-		break;
+
+			break;
 
 	}
 

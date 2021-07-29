@@ -1,7 +1,18 @@
-function mostrar()
-{
-	alert("ok");
+function mostrar() {
+	let num;
 
+	for (; ;) {
 
+		num = parseInt(prompt("Ingrese un número: "));
+		while (isNaN(num)) {
+			num = parseInt(prompt("ERROR. Ingrese un número: "));
+		}
 
-}//FIN DE LA FUNCIÓN
+		if (num == 9) {
+			break;
+		}
+
+		console.log(num);
+
+	}
+}

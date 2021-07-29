@@ -1,7 +1,21 @@
-function mostrar()
-{
+function mostrar() {
+	let i;
+	let num;
+	let cantidadDivisores = 0;
 
-	alert("ok");
+	num = parseInt(prompt("Ingrese un numero: "));
+	while (isNaN(num)) {
+		num = parseInt(prompt("ERROR, ingrese un numero: "));
+	}
 
+	for (i = 1; i <= num; i++) {
 
-}//FIN DE LA FUNCIÓN
+		if (num % i == 0) {
+			cantidadDivisores++;
+			console.log(i)
+		}
+	}
+
+	console.log("Cantidad de divisores encontrados: " + cantidadDivisores);
+
+}

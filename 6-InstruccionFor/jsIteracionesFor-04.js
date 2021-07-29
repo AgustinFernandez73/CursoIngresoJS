@@ -1,7 +1,11 @@
-function mostrar()
-{
-	alert("ok");
+function mostrar() {
+	for (let i = 0; ; i++) {
 
+		if (i == 574) {
+			break;
+		}
 
-
-}//FIN DE LA FUNCIÓN
+		console.log(i);
+		
+	}
+}
